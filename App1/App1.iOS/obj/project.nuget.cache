@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y5JYScM0CONWJVSF4zSx9TtNIJHUTCQLosk2MnV5G0xRiK22JBJKTC02SACIS0xPwj9JulPOpQFFY8TlaXgxfw==",
+  "dgSpecHash": "Z3CyzFZ3GE3QNOXOo4CxStjWMlkJUekrgC8mueae8kIH2k7NOWEoThG0G/fJecYPdxRIWSCtPbvF+LVoZPVaAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bapul\\source\\repos\\Proyecto\\App1\\App1.iOS\\App1.iOS.csproj",
+  "projectFilePath": "C:\\Users\\bapul\\Source\\Repos\\Gestor-Comunitario-App-Movil\\App1\\App1.iOS\\App1.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bapul\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\bapul\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

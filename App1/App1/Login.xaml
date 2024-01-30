@@ -7,8 +7,8 @@
         <Label x:Name="lblTexto" Text="" FontSize="16" Padding="30,0,30,0"/>
 
         <StackLayout Padding="15">
-            <Entry x:Name="txtUser" Placeholder="Usuario" ></Entry>
-            <Entry x:Name="txtPassword" Placeholder="Contraseña" IsPassword="True" ></Entry>
+            <Entry x:Name="txtUser" Placeholder="Usuario" Text="brayan" ></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Contraseña" Text="brayan" IsPassword="True" ></Entry>
         </StackLayout>
         
         <Button Text="Iniciar Sesión"  Clicked="cmdLogin_Clicked" ></Button>

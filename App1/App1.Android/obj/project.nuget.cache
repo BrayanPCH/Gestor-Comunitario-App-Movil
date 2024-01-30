@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6A7g4JNML2qJ/CNwSFsjScSnQHKd8LuNbnS8NIIz9slmrpiaq1tDaKOw/Iyr/HexaeV4QscMAImyG3IY++spXg==",
+  "dgSpecHash": "CTzdsQpgse7rwNxCpHUzL0gJk5Pw4XiuhnSzjtYLWlOhk099got5zMu9LCDexZBV5+98r3t9yVShTlLZKl4p/g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bapul\\source\\repos\\Proyecto\\App1\\App1.Android\\App1.Android.csproj",
+  "projectFilePath": "C:\\Users\\bapul\\Source\\Repos\\Gestor-Comunitario-App-Movil\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bapul\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\bapul\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
