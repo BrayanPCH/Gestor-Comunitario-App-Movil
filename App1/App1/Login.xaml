@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Login">
+    <StackLayout>
+        <Label Text="Iniciar Sesión" FontSize="Title" Padding="30,10,30,10"/>
+        <Label x:Name="lblTexto" Text="" FontSize="16" Padding="30,0,30,0"/>
+
+        <StackLayout Padding="15">
+            <Entry x:Name="txtUser" Placeholder="Usuario" ></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Contraseña" IsPassword="True" ></Entry>
+        </StackLayout>
+        
+        <Button Text="Iniciar Sesión"  Clicked="cmdLogin_Clicked" ></Button>
+        <Button x:Name="cmdRegesar" Text="REGRESAR" Clicked="cmdRegesar_Clicked"></Button>
+    </StackLayout>
+</ContentPage>

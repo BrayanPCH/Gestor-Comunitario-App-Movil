@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Payments">
+    <StackLayout>
+        <Label x:Name="txtResp" Text="" FontSize="16" Padding="30,0,30,0"/>
+        <Label Text="Lista de Pagos" FontSize="Title" HorizontalOptions="CenterAndExpand" Margin="10,0"/>
+        <!--<ListView x:Name="listViewPartners" HasUnevenRows="True" ItemTapped="OnItemTapped">-->
+        <ListView x:Name="listViewPayments" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <!-- Columna 1: Datos -->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <!-- Usar "*" significa que ocupará el espacio restante -->
+                                <ColumnDefinition Width="150" />
+                                <!-- Ancho fijo de 150 para la columna del botón -->
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Nª Factura: " />
+                                    <Label Text="{Binding numero_factura}" FontSize="Subtitle" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Concepto: " />
+                                    <Label Text="{Binding concepto}" FontSize="Subtitle" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Fecha de Pago:" />
+                                    <Label Text="{Binding fecha_cobro}" FontSize="Subtitle" />
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Total" />
+                                    <Label Text="{Binding total}" FontSize="Subtitle" />
+                                </StackLayout>
+                            </StackLayout>
+
+                            <!-- Columna 2: Botón "Ver" -->
+                            <StackLayout Grid.Column="1" Orientation="Vertical">
+                                <Button Text="Ver" CommandParameter="{Binding id_cobro}" Clicked="cmdView_Clicked" WidthRequest="150" />
+                                <!-- WidthRequest establece el ancho fijo del botón -->
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+</ContentPage>

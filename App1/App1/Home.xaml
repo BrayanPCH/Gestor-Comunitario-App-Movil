@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.Home">
+    <StackLayout>
+        <Label x:Name="txtResp" Text="" FontSize="16" Padding="30,0,30,0"/>
+        <Button Text="Nuevo Socio" Clicked="cmdNewPartner_Clicked" ></Button>
+        <Label Text="Lista de Socios" FontSize="Title" HorizontalOptions="CenterAndExpand" Margin="10,0"/>
+        <ListView x:Name="listViewPartners" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <!-- Ancho fijo para la primera columna -->
+                                <ColumnDefinition Width="150" />
+                                <!-- Resto del espacio para la segunda columna -->
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Orientation="Vertical">
+                                <Label Text="{Binding cedula}" FontSize="Subtitle" />
+                                <Label Text="{Binding nombres_completos}" FontSize="Subtitle" />
+                                <Label Text="{Binding correo}" FontSize="Subtitle" />
+                                <Label Text="{Binding telefono}" FontSize="Subtitle" />
+                            </StackLayout>
+
+                            <StackLayout Grid.Column="1" Orientation="Vertical" HorizontalOptions="EndAndExpand">
+                                <Button Text="Deudas" CommandParameter="{Binding id_cliente}" Clicked="cmdView_Clicked" />
+                                <Button Text="Pagos" CommandParameter="{Binding id_cliente}" Clicked="cmdPayments_Clicked" />
+                                <Button Text="Editar" CommandParameter="{Binding id_cliente}" Clicked="cmdUpdate_Clicked" />
+                                <Button Text="Eliminar" CommandParameter="{Binding id_cliente}" Clicked="cmdDelete_Clicked" />
+                            </StackLayout>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

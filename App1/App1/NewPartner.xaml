@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.NewPartner">
+    <StackLayout>
+        <Label x:Name="lblTexto" Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label x:Name="lblResp" Text="" FontSize="Title" Padding="30,10,30,10"/>
+
+        <Entry x:Name="txtCedula" Placeholder="Cedula" ></Entry>
+        <Entry x:Name="txtNombres" Placeholder="Nombres" ></Entry>
+        <Entry x:Name="txtApellidos" Placeholder="Apellidos" ></Entry>
+        <Entry x:Name="txtCorreo" Placeholder="Correo" ></Entry>
+        <Entry x:Name="txtTelefono" Placeholder="Teléfono" ></Entry>
+
+        <Button Text="Aceptar"  Clicked="cmdAccept_Clicked" ></Button>
+        <Button Text="Cancelar" Clicked="cmdCancel_Clicked"></Button>
+    </StackLayout>
+</ContentPage>
